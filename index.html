@@ -7,14 +7,38 @@
 
 </head>
 
-<body >
+<body onload="showData()">
     <div>
         <h1>To-Do List</h1>
+    </div>
+    <div>
+        <label for="task">
+            Task
+        </label>
+        <input id="task" type="text" placeholder="task name" />
     </div>
     <div>
         <button onclick="addTask()">
             Add Task
         </button>
+    </div>
+    <div>
+        <table>
+            <thead>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Task
+                </th>
+                <th>
+                    Actions
+                </th>
+            </thead>
+            <tbody id="allData">
+
+            </tbody>
+        </table>
     </div>
     <script src="./Javascript/toDoList.js"></script>
 </body>
